@@ -1,0 +1,26 @@
+body{
+    background-color:#2f46f7
+}
+
+body > hgroup > h1 {
+    font-family: 'Skranji', cursive;
+    color: whitesmoke
+}
+
+hgroup > h2 {
+    color: lavenderblush;
+}
+
+body > div {
+    display: flex;
+}
+
+body > div > ul > li {
+    border: lavender
+}
+
+
+body > div > ul > li {
+    color: lavender;
+}
+

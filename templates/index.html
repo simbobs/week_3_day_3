@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}- CookieMonsterCo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_index.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
 </head>
 <body>
     <hgroup>
@@ -13,15 +17,17 @@
     </hgroup>
 
     {% for order in orders %}
+    <div>
     <ul>
         <li>
             
-        {{order.order_date}}: {{order.customer_name}}
+        {{order.order_date}}: <b>{{order.customer_name}}</b>
         <p>Cookie Flavour: {{order.cookie_type}}</p>
         <p>Quantity:  {{order.quantity}}</p>
 
         </li>  
     </ul>
+    </div>
     {% endfor %}
     
         
